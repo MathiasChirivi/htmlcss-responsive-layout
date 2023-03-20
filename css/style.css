@@ -154,3 +154,28 @@ header{
 .decorationSubTitle{
     margin-bottom: 30px;
 }
+
+.boxPartners{
+    background-color: #9792e4;
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.boxPhoto{
+    margin-left: 30px ;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.photoProfile{
+    border-radius: 50%;
+    width: 25%;
+}
+
+#nomeParteners{
+    position: absolute;
+    left: 0;
+    bottom: 40px;  
+}
