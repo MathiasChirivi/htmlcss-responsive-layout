@@ -1,0 +1,141 @@
+/*************************************************
+*******************GENERAL STYLES*****************
+ *************************************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 76px;
+    background-color: rgb(0,132,253) ;
+}
+
+.containerHead{
+    height: 76px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    margin: 5px;
+}
+
+.link{
+    margin: 5px;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+/*MAIN*/
+
+.firstSection{
+    min-height: 500px;
+    background-color: violet;
+}
+
+.firstCards{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sezioneUno{
+    width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.cardsUno{
+    min-height: 100px;
+    width: calc(1140px / 2 + 10.5em);
+    height: calc(1140 / 2 - 5em);
+    background: aqua;
+    margin: 10px;
+}
+
+.sezioneDue{
+    width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.cardsDue{
+    min-height: 100px;
+    height: calc(1140px / 3 - 5em);
+    width: calc(1140px / 3 - 1.25em);
+    background: aqua;
+    margin: 10px;
+}
+
+.secondSection{
+    min-height: 400px ;
+    background-color: #9792e4;
+}
+
+.contentSecondSection{
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.columnSX{
+    min-height: 100px;
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.strategicPlanning{
+    width: 70%;
+}
+
+.decorationTitle{
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+.columnDX{
+    min-height: 100px;
+    width: calc(100% / 2);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10%;
+}
+
+.appDevelopement{
+    width: 50%;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 2rem auto;
+    background-color: #9792e4;
+}
