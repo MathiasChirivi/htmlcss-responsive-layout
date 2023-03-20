@@ -240,6 +240,30 @@ header{
     border-radius: 50%;
     width: 50%;
     margin-bottom: 40px;
-
 }
 
+.sixthSection{
+    background-color: #9792e4;
+}
+
+.sixthContentSection{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+footer{
+    background-color: rgb(51, 51, 51);
+}
+
+.contentFooter{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
