@@ -98,6 +98,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .strategicPlanning{
@@ -123,6 +124,8 @@ header{
     align-items: center;
     background: white;
     border-radius: 10%;
+    margin: 100px;
+    padding: 45px;
 }
 
 .appDevelopement{
@@ -138,4 +141,16 @@ header{
     border-radius: 50%;
     margin: 2rem auto;
     background-color: #9792e4;
+}
+
+.contentThirdSection{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decorationSubTitle{
+    margin-bottom: 30px;
 }
