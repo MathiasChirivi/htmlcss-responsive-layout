@@ -130,7 +130,6 @@ i.fa-solid.fa-bars{
 }
 
 .columnDX{
-    min-height: 100px;
     width: calc(100% / 2);
     margin: 0 auto;
     display: flex;
@@ -303,12 +302,8 @@ footer{
         display: block;
     }
 
-    main{
-        width: 100%;
-    }
-
-    header{
-        width: 100%;
+    .firstCards{
+        width: 480px;
     }
 
     .link, .start{
@@ -331,12 +326,22 @@ footer{
     }
 
     .contentSecondSection{
-       display:flex ;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
     }
 
-    
+    .columnSX, .box{
+        margin: 0 auto;
+    }
 
+    .contentThirdSection{
+        width: 480px;
+    }
+
+    .boxPartners{
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+    }
 }
