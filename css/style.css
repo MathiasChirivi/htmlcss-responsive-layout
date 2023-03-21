@@ -1,367 +1,536 @@
-/*************************************************
-*******************GENERAL STYLES*****************
- *************************************************/
-
-*,
-*::before,
-*::after {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-    height: 76px;
-    background-color: rgb(0,132,253) ;
+body{
+    font-size: 20px;
 }
 
-i.fa-solid.fa-bars{
-    display: none;
+.section{
+    margin: 30px 0;
 }
 
-.containerHead{
-    height: 76px;
+/* general rules */
+.container{
+    width: 80%;
+    margin: 40px auto;
+    height: 100%;
+}
+
+.container-header-no{
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+}
+
+
+.flex{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.logo{
-    margin: 5px;
+.fl-wrap{
+    flex-wrap: wrap;
 }
 
-.link{
-    margin: 5px;
-    padding: 7px;
+.ali-end{
+    align-items: flex-end;
+}
+
+.jus-end{
+    align-items: flex-end;
+}
+
+.align-center{
+align-items: center;
+}
+
+a{
     text-decoration: none;
-    color: white;
+    list-style-type: none;
 }
 
-/*MAIN*/
-
-.firstSection{
-    margin-bottom: 100px;
+.ptb-76{
+    padding: 76px 0;
 }
 
-.firstCards{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+.mt-5{
+    margin: 50px 0;
 }
 
-.sezioneUno{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    margin-top: 50px;
+.mt-3{
+    margin-top: 30px;
 }
 
-.cardsUno{
-    display: flex;
-    width: calc(100% / 2 + 10.5em);
-    background: aqua;
-    margin: 10px;
+.mb-2{
+    margin-bottom: 20px;
 }
 
-.SX{
-    width: calc(100% / 2 + 10%);
+.mb-6{
+    margin-bottom: 60px;
 }
 
-.DX{
-    width: calc(100% / 2 - 10%);
+.mr-2{
+    margin-right: 20px;
 }
 
-#phone{
-    width: 90%;
+.pd-4{
+    padding: 40px 0;
 }
 
-.sezioneDue{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
+.pt-3{
+    padding-top: 30px;
 }
 
-.cardsDue{
-    width: calc(100% / 3 - 1.25em);
-    background: aqua;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pdb-3{
+    padding-bottom: 30px;
+}
+
+.pd-3-2{
+    padding: 30px 20px;
+}
+
+.mrtb-15{
+    margin: 15px 0;
+}
+
+.button-small{
+    padding: 10px 15px;
+    border-radius: 40px;
+}
+
+.button-big{
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+
+.bg-v{ background-color: #9792e4;}
+.bg-w{ background-color: white;}
+.bg-strong-blue{ background-color: #0084fd;}
+.bg-light-blue{ background-color: #b5ddff;}
+
+.center{
     text-align: center;
 }
 
-.secondSection{
-    background-color: #9792e4;
+.co-font{
+    color: #5f7486;
 }
 
-.contentSecondSection{
-    display: flex;
-    flex-direction: row;
+.font-blue{ color: #0a89fd;}
+.font-white{ color: white;}
+.font-violet{color: #9792e4; }
+
+
+
+/* rules header */
+
+header{
+    background-color: #0084fd;
+    height: 76px;
     width: 100%;
-    margin: 0 auto;
-    padding-top: 100px;
+    position: fixed;
+    z-index: 500;
 }
 
-.columnSX{
-    min-height: 100px;
-    width: calc(100% / 2);
+header, li{
+    display: inline;
+
+}
+
+header, a{
+    margin-right: 20px;
+    color: white;
+
+}
+
+#menu{
+    display: none;
+}
+
+.no-margin{
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+}
+
+
+/* main rules */
+
+.card{
+    width: calc(100%/3 - 20px);
+    border-radius: 40px;
+    padding: 30px 20px;
+}
+
+.card-big{
+    width: calc((100% / 3) * 2 - 20px);
+    border-radius: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.strategicPlanning{
+.line-height{
+    line-height: 130%;
+    font-size: 20px;
+}
+
+.img-phone{
+    width: 90%;
+    align-items: flex-end;
+}
+
+
+.fa-solid{
+    font-size: 60px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* section strategic planning */
+
+.col-sx{
+    width: calc(100% / 2 - 20px);
+    padding-top: 70px;
+    margin-right: 20px;
+}
+
+.col-dx{
+    width: calc(100% / 2 - 20px);
+    padding-top: 70px;
+}
+
+.img-planning{
+    width: 90%;
+}
+
+.card-app{
+    background-color: white;
+    border-radius: 40px;
+    padding: 35px;
+}
+
+.img-app{
     width: 70%;
 }
 
-.decorationTitle{
-    margin-top: 70px;
-    margin-bottom: 25px;
-}
-
-.columnDX{
-    width: calc(100% / 2);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    border-radius: 10%;
-    margin: 100px;
-    padding: 45px;
-}
-
-.appDevelopement{
-    width: 50%;
-}
-
-.circle{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 2rem auto;
+.button-round{
+    padding: 10px;
+    border-radius: 100%;
     background-color: #9792e4;
 }
 
-.contentThirdSection{
+.container-strategic{
+    display: flex;
+    align-items: flex-end;
+}
+
+.fa-arrow-down{
+    font-size: 15px;
+    color: black;
+}
+
+
+/* section testimonial */
+.title-testimonial{
+    color: #9792e4;
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+.test-card{
     width: 100%;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
-}
-
-.decorationSubTitle{
-    margin-bottom: 30px;
-}
-
-.boxPartners{
     background-color: #9792e4;
-    display: flex;
-    margin-bottom: 30px;
-    border-radius: 15px;
+    border-radius: 40px;
+    margin:30px 0;
+    padding: 40px;
+    text-align: left;
 }
 
-.boxPhoto{
-    margin-left: 30px ;
-    display: flex;
-    align-items: center;
-    position: relative;
+.test-text{
+    width: 80%;
 }
 
-.photoProfile{
-    margin: 15px;
-    width: 180px;
+.img-round{
+    width: 20%;
     height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.fa-quote-right, .fa-quote-left{
+    font-size: 20px;
+}
+
+.signature{
+    margin-top: 30px;
+    color: white;
+}
+
+
+/* section benefits */
+
+.ben-card{
+    width: calc(100% / 3 - 20px);
+    text-align: left;
+    padding: 35px;
+    border-radius: 40px;
+    background-color: white;
+    margin-bottom: 20px;   
+}
+
+.container-benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-text{
+    color: white;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.number{
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.button-more{
+    margin: 45px 0;
+}
+
+/* section about us */
+.container-about-us{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ab-col-sx{
+    width: 65%;
+
+    /* debug */
+    margin: 20px 0 ;
+}
+
+.ab-col-dx{
+    width: 25%;
+
+    /* debug */
+    margin: 20px 0;
+}
+
+.img-about{
+    height: 180px;
+    width: 180px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-#nomeParteners{
-    position: absolute;
-    left: 0;
-    bottom: 40px;  
-}
-
-.benefitWork{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #9792e4;
-}
-
-.contentFourthSection{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.cardBenefit{
-    background-color: rgb(255, 255, 255);
-    width: calc(100% / 3 - 9px );
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 7px auto;
-    gap: 10px;
-}
-
-.subTitlecard{
-    margin-top:10px;
-    margin-bottom: 10px;
+.text-catch{
+    font-size: 25px;
     color: #9792e4;
+    line-height: 150%;
+    margin-bottom: 30px;
 }
 
-.More{ 
-    width: calc(100% / 2 - 3rem);
+/* section get strated */
+
+.get{
+    padding: 40px 0;
 }
 
-.boxContentfiveSection{
-    width: 100%;
+.container-small{
+    width: 60%;
     margin: 0 auto;
-    display: flex;
-    padding-top:100px ;
-    padding-bottom: 100px;
+    text-align: center;
 }
 
-.columnFiveSX{
-    width: calc(100%/2 + 20%);
+.get-started{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: grey;
 }
 
-.columnFiveDX{
-    width: calc(100%/2 - 20%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.get-medium-text{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
 }
 
-.AboutUs{
-    border-radius: 50%;
-    width: 50%;
+.get-big-text{
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: rgb(239, 163, 97);
+}
+
+.get-normal-text{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.get-button-big{
+    padding: 20px 60px;
+    background-color: white;
+    color: #9792e4;
+    border-radius: 40px;
     margin-bottom: 40px;
 }
 
-.sixthSection{
-    background-color: #9792e4;
+.get-copy{
+    color: white;
+    font-size: 18px;
+    margin-top: 40px;
+
 }
 
-.sixthContentSection{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-}
+/* footer */
 
 footer{
-    background-color: rgb(51, 51, 51);
+    height: 400px;
+    background-color: #333333;
+    padding: 60px 0;
+    
 }
 
-.contentFooter{
-    width: 100%;
+.container-footer-small{
+    width: 40%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
+    text-align: center;
 }
 
-/*********************************
-**************RESPONSIVE**********
-*********************************/
 
-@media screen and (max-width: 480px){
-    .containerHead {
-        width: 100%;
+.footer-margin{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+footer a{
+    text-decoration: underline;
+}
+
+
+
+
+/* tablet version */
+
+@media all and (max-width: 768px) {
+    
+    .container{
+        width: 90%;
+    }
+    /* header rules */
+    #menu-desktop{
+        display: none;
     }
 
-    i.fa-solid.fa-bars{
+    #menu{
+        display: inline;
+    }
+
+    /* section introduction */
+    .card-big{
         display: block;
     }
 
-    .firstCards{
-        width: 100%;
+    /* section strategic */
+    .container-strategic{
+        display: block;
     }
 
-    .link, .start{
-        display: none;
-    }
-    .cardsUno{
-        display: flex;
-        flex-direction: column;
-        width: calc(100% / 3 - 1.25em);
-        align-items: center;
+    .col-sx{
+        width: 100%;
         text-align: center;
     }
 
-    .sezioneUno, .sezioneDue{
+    .col-dx{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* benefits section */
+    .ben-card{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .container-small{
+        width: 70%;
+    }
+
+    .container-footer-small{
+        width: 60%;
+    }
+
+}
+
+
+
+
+/* smartphone version */
+@media all and (max-width: 480px) {
+    .container{
+        width: 95%;
+    }
+    /* section introduction */
+    .row{
         display: block;
     }
 
-    .secondSection{
+    .card, .card-big{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .test-card{
+        display: block;
+        text-align: center;
+    }
+
+    .test-text{
         width: 100%;
     }
 
-    .contentSecondSection{
-        width:100%;
-        display: flex;
-        flex-direction: column;
+    .container-about-us{
+        display: block;
     }
 
-    .columnSX, .box{
-        margin: 0 auto;
+    .ab-col-sx{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
-    .contentThirdSection{
+    .ab-col-dx{
+        width: 100%;
+        text-align: center;
+    }
+
+    .ben-card{
         width: 100%;
     }
 
-
-    .boxPartners{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .container-small{
+        width: 95%;
     }
 
-    #nomeParteners{
-        display: flex;
+    .container-footer-small{
+        width: 90%;
     }
 
-    .contentFourthSection{
-        width: 100%;
+    footer{
+        height: 250px;
     }
 
-    .cardBenefit{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .boxContentfiveSection{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .More{
-        width: calc(100% / 4);
-        border-radius: 10%;
-    }
 }
